@@ -11,7 +11,8 @@ def start(update: Update, context: CallbackContext):
 
 def show_help(update: Update, context: CallbackContext):
     context.bot.send_message(
-        """
+        chat_id=update.effective_chat.id,
+        text="""
         Available Commands :-
         /help - This help.
         /start - Start some.
