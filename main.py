@@ -10,7 +10,7 @@ def start(update: Update, context: CallbackContext):
 
 
 def show_help(update: Update, context: CallbackContext):
-    update.message.reply_text(
+    context.bot.send_message(
         """
         Available Commands :-
         /help - This help.
