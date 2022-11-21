@@ -9,4 +9,5 @@ class BotConfig(BaseConfig):
     use_webhook: bool = False
     webhook_host: str = "127.0.0.1"
     webhook_port: int = 80
+    webhook_url_path: Optional[str] = ''
     webhook_url: Optional[str] = None
