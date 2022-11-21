@@ -46,7 +46,7 @@ def start_bot():
             url_path=config.bot_token.get_secret_value(),
         )
         webhook_path = config.webhook_url + config.bot_token.get_secret_value()
-        updater.bot.setWebhook(webhook_path)
+        # updater.bot.setWebhook(webhook_path)
     else:
         updater.start_polling()
 
