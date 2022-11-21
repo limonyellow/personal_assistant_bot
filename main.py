@@ -43,7 +43,7 @@ def start_bot():
         updater.start_webhook(
             listen=config.webhook_host,
             port=config.webhook_port,
-            url_path=config.bot_token.get_secret_value(),
+            url_path=config.webhook_url_path,
             webhook_url=config.webhook_url
         )
         # webhook_path = config.webhook_url + config.bot_token.get_secret_value()
